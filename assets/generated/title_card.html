@@ -1,0 +1,13 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body,canvas{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
+</style></head><body><canvas id="c" width="3840" height="2160"></canvas><script>
+const c=document.querySelector('#c'),x=c.getContext('2d');
+x.fillStyle='#000';x.fillRect(0,0,c.width,c.height);
+const glow=x.createRadialGradient(1920,1080,20,1920,1080,1200);
+glow.addColorStop(0,'#170000');glow.addColorStop(.4,'#070000');glow.addColorStop(1,'#000');
+x.fillStyle=glow;x.fillRect(0,0,c.width,c.height);
+x.textAlign='center';x.textBaseline='middle';x.font='bold 255px DejaVu Sans';
+x.shadowColor='#ff0000';x.shadowBlur=28;x.lineWidth=7;x.strokeStyle='#260000';x.strokeText('THE SIGNAL',1920,1080);
+x.fillStyle='#b40000';x.fillText('THE SIGNAL',1920,1080);
+</script></body></html>

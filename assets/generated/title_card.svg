@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+  <defs>
+    <radialGradient id="bg"><stop stop-color="#170000"/><stop offset=".42" stop-color="#070000"/><stop offset="1" stop-color="#000000"/></radialGradient>
+    <filter id="glow" x="-20%" y="-70%" width="140%" height="240%"><feGaussianBlur stdDeviation="20" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="3840" height="2160" fill="url(#bg)"/>
+  <text x="1920" y="1140" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="255" font-weight="bold" letter-spacing="5" fill="#b40000" stroke="#260000" stroke-width="7" filter="url(#glow)">THE SIGNAL</text>
+</svg>
